@@ -1,0 +1,203 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Mulish", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background-image: url(./background.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transform: scale(0.95);
+}
+
+.container {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  width: 701px;
+  height: 951px;
+  background: #ffff;
+  border-radius: 5px;
+  box-shadow: 0px 28px 40px -20px rgba(107, 99, 255, 0.306079);
+  animation: show 0.45s ease-in;
+
+  .header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    height: 185px;
+    top: 65px;
+    left: 70px;
+    flex-shrink: 0;
+    h1 {
+      font-size: 22px;
+      line-height: 27.61px;
+      font-weight: 700;
+      color: #1d2140;
+    }
+    h5 {
+      width: 511px;
+      height: 56px;
+      font-size: 18px;
+      line-height: 28px;
+      font-weight: 400;
+      color: #1d2140;
+      margin-top: 30px;
+    }
+  }
+  .hr {
+    display: flex;
+    flex-shrink: 0;
+    margin-top: 100px;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-top: 60px;
+    margin-left: 93px;
+    height: 1250px;
+    overflow-y: auto;
+    animation: show1 0.7s ease-in;
+
+    .col {
+      display: flex;
+      flex-direction: column;
+      flex-shrink: 0;
+      cursor: pointer;
+      .col-head {
+        display: flex;
+      }
+      .sign {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        width: 40px;
+        height: 40px;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 20.08px;
+        background: #ffff;
+        border-radius: 50%;
+        margin-left: 23px;
+        top: 15px;
+        z-index: 3;
+      }
+      .title {
+        color: #1d2140;
+        position: relative;
+        font-size: 16px;
+        line-height: 40.08px;
+        font-weight: 700;
+
+        margin-left: 15px;
+        top: 15px;
+        z-index: 1;
+      }
+      .context-container {
+        display: none;
+        position: relative;
+        bottom: 45px;
+        width: 561px;
+        height: 339px;
+        border-radius: 5px;
+        background-color: #f0f4fd;
+        padding-top: 75px;
+        flex-direction: column;
+        transition: display 2s ease-out;
+        z-index: 0;
+        animation: context-show 0.4s ease-in;
+
+        .context {
+          display: flex;
+          width: 433px;
+          height: 130px;
+          margin-top: 30px;
+          margin-left: 78px;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 26px;
+        }
+        .buttons {
+          button {
+            width: 167px;
+            height: 44px;
+            background-color: #6b63ff;
+            color: #ffff;
+            border-radius: 60px;
+            outline: none;
+            cursor: pointer;
+            border: none;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 20.08px;
+            margin-top: 30px;
+            margin-left: 78px;
+            transition: 0.3s all;
+          }
+          button:hover {
+            transform: scale(1.1);
+            box-shadow: 0px 24px 24px -15px rgba(74, 113, 255, 0.45);
+          }
+        }
+      }
+    }
+    .col + .col {
+      margin-top: 55px;
+    }
+  }
+}
+.container .content .col .context-container.active {
+  display: flex;
+}
+
+@keyframes show {
+  0% {
+    opacity: 0;
+    margin-top: 25px;
+  }
+  100% {
+    opacity: 1;
+    margin-top: 0px;
+  }
+}
+
+@keyframes show1 {
+  0% {
+    opacity: 0;
+    margin-top: 80px;
+  }
+  100% {
+    opacity: 1;
+    margin-top: 60px;
+  }
+}
+
+@keyframes context-show {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 645px) {
+  body {
+    transform: scale(0.65);
+  }
+}

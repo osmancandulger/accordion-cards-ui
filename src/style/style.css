@@ -1,0 +1,301 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Mulish", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-image: url(./background.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 701px;
+  height: 951px;
+  background: #ffff;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 28px 40px -20px rgba(107, 99, 255, 0.306079);
+          box-shadow: 0px 28px 40px -20px rgba(107, 99, 255, 0.306079);
+  -webkit-animation: show 0.45s ease-in;
+          animation: show 0.45s ease-in;
+}
+
+.container .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  width: 100%;
+  height: 185px;
+  top: 65px;
+  left: 70px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.container .header h1 {
+  font-size: 22px;
+  line-height: 27.61px;
+  font-weight: 700;
+  color: #1d2140;
+}
+
+.container .header h5 {
+  width: 511px;
+  height: 56px;
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 400;
+  color: #1d2140;
+  margin-top: 30px;
+}
+
+.container .hr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  margin-top: 100px;
+}
+
+.container .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  margin-top: 60px;
+  margin-left: 93px;
+  height: 1250px;
+  overflow-y: auto;
+  -webkit-animation: show1 0.7s ease-in;
+          animation: show1 0.7s ease-in;
+}
+
+.container .content .col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  cursor: pointer;
+}
+
+.container .content .col .col-head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container .content .col .sign {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  width: 40px;
+  height: 40px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20.08px;
+  background: #ffff;
+  border-radius: 50%;
+  margin-left: 23px;
+  top: 15px;
+  z-index: 3;
+}
+
+.container .content .col .title {
+  color: #1d2140;
+  position: relative;
+  font-size: 16px;
+  line-height: 40.08px;
+  font-weight: 700;
+  margin-left: 15px;
+  top: 15px;
+  z-index: 1;
+}
+
+.container .content .col .context-container {
+  display: none;
+  position: relative;
+  bottom: 45px;
+  width: 561px;
+  height: 339px;
+  border-radius: 5px;
+  background-color: #f0f4fd;
+  padding-top: 75px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-transition: display 2s ease-out;
+  transition: display 2s ease-out;
+  z-index: 0;
+  -webkit-animation: context-show 0.4s ease-in;
+          animation: context-show 0.4s ease-in;
+}
+
+.container .content .col .context-container .context {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 433px;
+  height: 130px;
+  margin-top: 30px;
+  margin-left: 78px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.container .content .col .context-container .buttons button {
+  width: 167px;
+  height: 44px;
+  background-color: #6b63ff;
+  color: #ffff;
+  border-radius: 60px;
+  outline: none;
+  cursor: pointer;
+  border: none;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20.08px;
+  margin-top: 30px;
+  margin-left: 78px;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+}
+
+.container .content .col .context-container .buttons button:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-box-shadow: 0px 24px 24px -15px rgba(74, 113, 255, 0.45);
+          box-shadow: 0px 24px 24px -15px rgba(74, 113, 255, 0.45);
+}
+
+.container .content .col + .col {
+  margin-top: 55px;
+}
+
+.container .content .col .context-container.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@-webkit-keyframes show {
+  0% {
+    opacity: 0;
+    margin-top: 25px;
+  }
+  100% {
+    opacity: 1;
+    margin-top: 0px;
+  }
+}
+
+@keyframes show {
+  0% {
+    opacity: 0;
+    margin-top: 25px;
+  }
+  100% {
+    opacity: 1;
+    margin-top: 0px;
+  }
+}
+
+@-webkit-keyframes show1 {
+  0% {
+    opacity: 0;
+    margin-top: 80px;
+  }
+  100% {
+    opacity: 1;
+    margin-top: 60px;
+  }
+}
+
+@keyframes show1 {
+  0% {
+    opacity: 0;
+    margin-top: 80px;
+  }
+  100% {
+    opacity: 1;
+    margin-top: 60px;
+  }
+}
+
+@-webkit-keyframes context-show {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes context-show {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 645px) {
+  body {
+    -webkit-transform: scale(0.65);
+            transform: scale(0.65);
+  }
+}
+/*# sourceMappingURL=style.css.map */
